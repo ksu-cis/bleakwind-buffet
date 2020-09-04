@@ -5,12 +5,12 @@
 * Purpose: Show size/price options and calories for the side
 */
 using BleakwindBuffet.Data.Enums;
-using Data.Enums;
+//using Data.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Data.Sides
+namespace BleakwindBuffet.Data.Sides
 {
     /// <summary>
     /// Properties of waffle fries
