@@ -5,7 +5,7 @@
 * Purpose: Show size options and ice for the drink
 */
 using BleakwindBuffet.Data.Enums;
-using Data.Enums;
+//using Data.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
