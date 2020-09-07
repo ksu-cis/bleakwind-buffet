@@ -34,10 +34,13 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
         }
 
         [Fact]
-        public void ShouldReturnCorrectStringOnSpecialInstructions()
+        public void ShouldReturnCorrectStringOnSpecialInstructions() //AGH
         {
             MadOtarGrits mg = new MadOtarGrits();
-            //wut do i do
+            /*Assert.Throws<System.NotImplementedException>(() =>
+            {
+                MadOtarGrits mg = new MadOtarGrits();
+            });*/
         }
 
         [Theory]

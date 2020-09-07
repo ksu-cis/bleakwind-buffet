@@ -34,10 +34,13 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
         }
 
         [Fact]
-        public void ShouldReturnCorrectSpecialInstructions()
+        public void ShouldReturnCorrectSpecialInstructions() //AGH
         {
             DragonbornWaffleFries df = new DragonbornWaffleFries();
-            //wut do i do here
+            /*Assert.Throws<System.NotImplementedException>(() =>
+            {
+                DragonbornWaffleFries df = new DragonbornWaffleFries();
+            });*/
         }
 
         [Theory]

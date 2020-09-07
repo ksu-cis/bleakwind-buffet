@@ -85,6 +85,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         public void ShouldReturnCorrectPrice() //AGH
         {
             SmokehouseSkeleton ss = new SmokehouseSkeleton();
+            Assert.NotEqual(0, ss.Price);
         }
 
         [Fact]

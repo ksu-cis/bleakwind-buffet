@@ -187,6 +187,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         public void ShouldReturnCorrectPrice() //AGH
         {
             ThalmorTriple tt = new ThalmorTriple();
+            Assert.NotEqual(0, tt.Price);
         }
 
         [Fact]

@@ -34,10 +34,13 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
         }
 
         [Fact]
-        public void ShouldReturnCorrectSpecialInstructions()
+        public void ShouldReturnCorrectSpecialInstructions() //AGH
         {
             FriedMiraak fm = new FriedMiraak();
-            //wut do i do here
+            /*Assert.Throws<System.NotImplementedException>(() =>
+            {
+                FriedMiraak fm = new FriedMiraak();
+            });*/
         }
 
         [Theory]

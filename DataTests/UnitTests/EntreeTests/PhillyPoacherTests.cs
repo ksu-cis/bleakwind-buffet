@@ -68,6 +68,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         public void ShouldReturnCorrectPrice() //AGH
         {
             PhillyPoacher pp = new PhillyPoacher();
+            Assert.NotEqual(0, pp.Price);
         }
 
         [Fact]

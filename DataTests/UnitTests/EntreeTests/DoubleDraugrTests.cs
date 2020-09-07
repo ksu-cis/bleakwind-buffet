@@ -153,6 +153,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         public void ShouldReturnCorrectPrice() //AGH
         {
             DoubleDraugr dd = new DoubleDraugr();
+            Assert.NotEqual(0, dd.Price);
 
         }
 

@@ -17,6 +17,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         public void ShouldReturnCorrectPrice() //AGH
         {
             ThugsTBone tb = new ThugsTBone();
+            Assert.NotEqual(0, tb.Price);
         }
 
         [Fact]

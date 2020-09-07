@@ -137,7 +137,27 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
         public void ShouldHaveCorrectToStringBasedOnSizeAndFlavor(SodaFlavor flavor, Size size, string name)
         {
             SailorSoda ss = new SailorSoda();
-            //yikes to do
+            ss.Size = size;
+            if (flavor == SodaFlavor.Blackberry)
+                Assert.Equal(name, ss.ToString());
+            else if(flavor == SodaFlavor.Cherry)
+            {
+                Assert.Equal(name, ss.ToString());
+            }
+            else if(flavor == SodaFlavor.Grapefruit)
+            {
+                Assert.Equal(name, ss.ToString());
+            }
+            else if(flavor == SodaFlavor.Lemon)
+            {
+                Assert.Equal(name, ss.ToString());
+            }
+            else if(flavor == SodaFlavor.Peach)
+            {
+                Assert.Equal(name, ss.ToString());
+            }
+            else
+                Assert.Equal(name, ss.ToString());
         }
     }
 }

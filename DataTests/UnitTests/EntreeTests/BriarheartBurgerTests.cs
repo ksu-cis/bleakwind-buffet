@@ -103,7 +103,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         public void ShouldReturnCorrectPrice() //AGH
         {
             BriarheartBurger bb = new BriarheartBurger();
-            
+            Assert.NotEqual(0, bb.Price);
         }
 
         [Fact]

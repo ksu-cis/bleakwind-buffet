@@ -85,7 +85,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         public void ShouldReturnCorrectPrice() //AGH
         {
             GardenOrcOmelette goc = new GardenOrcOmelette();
-
+            Assert.NotEqual(0, goc.Price);
         }
 
         [Fact]

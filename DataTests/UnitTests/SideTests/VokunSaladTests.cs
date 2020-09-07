@@ -9,6 +9,7 @@ using Xunit;
 using BleakwindBuffet.Data;
 using BleakwindBuffet.Data.Sides;
 using BleakwindBuffet.Data.Enums;
+using System;
 
 namespace BleakwindBuffet.DataTests.UnitTests.SideTests
 {
@@ -34,10 +35,13 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
         }
 
         [Fact]
-        public void ShouldReturnCorrectSpecialInstructions()
+        public void ShouldReturnCorrectSpecialInstructions() //AGH
         {
             VokunSalad vs = new VokunSalad();
-            //wut do i do
+            /*Assert.Throws<System.NotImplementedException>(() =>
+            {
+                VokunSalad vs = new VokunSalad();
+            });*/
         }
 
         [Theory]
