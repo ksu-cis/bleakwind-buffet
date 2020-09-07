@@ -15,16 +15,34 @@ namespace BleakwindBuffet.Data.Entrees
     /// </summary>
     public class SmokehouseSkeleton
     {
+        /// <summary>
+        /// gets the price
+        /// </summary>
         public double Price => 5.62;
 
+        /// <summary>
+        /// gets the calories
+        /// </summary>
         public uint Calories => 602;
 
+        /// <summary>
+        /// gets/sets if they want sausage
+        /// </summary>
         public bool SausageLink { get; set; } = true;
 
+        /// <summary>
+        /// gets/sets if they want egg
+        /// </summary>
         public bool Egg { get; set; } = true;
 
+        /// <summary>
+        /// gets/sets if they want hashbrowns
+        /// </summary>
         public bool HashBrowns { get; set; } = true;
 
+        /// <summary>
+        /// gets/sets if they want a pancake
+        /// </summary>
         public bool Pancake { get; set; } = true;
 
         /// <summary>
@@ -46,7 +64,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Overrides the ToString() method to return the "Smokehouse Skeleton" string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>name of entree</returns>
         public override string ToString()
         {
             return "Smokehouse Skeleton";

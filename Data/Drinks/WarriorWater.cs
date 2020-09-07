@@ -30,7 +30,8 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// gets/sets price depending on size
         /// </summary>
-        public double price
+        /// <exception cref="System.NotImplementedException">Thrown for any unknown size</exception>
+        public double Price
         {
             get
             {
@@ -44,6 +45,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// gets calories depending on size
         /// </summary>
+        /// <exception cref="System.NotImplementedException">Thrown for any unknown calories</exception>
         public uint Calories
         {
             get
@@ -82,10 +84,10 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// Overrides the ToString() method to return the "Warrior Water" string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>size + Warrior string</returns>
         public override string ToString()
         {
-            return Size + " Warrior Water";
+            return Size.ToString() + " Warrior Water";
         }
     }
 }

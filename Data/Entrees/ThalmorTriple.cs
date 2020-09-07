@@ -101,7 +101,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Overrides the ToString() method to return the "Thalmor Triple" string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>name of burger</returns>
         public override string ToString()
         {
             return "Thalmor Triple";

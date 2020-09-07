@@ -62,7 +62,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Overrides the ToString() method to return the "Graden Orc Omelette" string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string name of omelette</returns>
         public override string ToString()
         {
             return "Garden Orc Omelette";

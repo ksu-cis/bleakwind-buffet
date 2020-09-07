@@ -36,6 +36,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// gets/sets price depending on size
         /// </summary>
+        /// <exception cref="System.NotImplementedException">Thrown for any unknown price</exception>
         public double Price
         {
             get
@@ -50,6 +51,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// gets calories depending on size
         /// </summary>
+        /// <exception cref="System.NotImplementedException">Thrown for any unknown calories</exception>
         public uint Calories
         {
             get
@@ -82,10 +84,10 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// Overrides the ToString() method to return the "Markarth Milk" string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>size + markarth milk string</returns>
         public override string ToString()
         {
-            return Size + " Markarth Milk";
+            return Size.ToString() + " Markarth Milk";
         }
     }
 }

@@ -89,7 +89,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Overrides the ToString() method to return the "Double Draugr" string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string name of burger</returns>
         public override string ToString()
         {
             return "Double Draugr";

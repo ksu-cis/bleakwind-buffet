@@ -30,6 +30,7 @@ namespace BleakwindBuffet.Data.Sides
         /// <summary>
         /// gets price depending on size
         /// </summary>
+        /// <exception cref="System.NotImplementedException">Thrown for any unknown size</exception>
         public double Price
         {
             get
@@ -44,6 +45,7 @@ namespace BleakwindBuffet.Data.Sides
         /// <summary>
         /// gets calories depending on size
         /// </summary>
+        /// <exception cref="System.NotImplementedException">Thrown for any unknown cal</exception>
         public uint Calories
         {
             get
@@ -58,10 +60,10 @@ namespace BleakwindBuffet.Data.Sides
         /// <summary>
         /// adds size and name of dish to ToString() method
         /// </summary>
-        /// <returns></returns>
+        /// <returns>size + name of dish</returns>
         public override string ToString()
         {
-            return Size + " Mad Otar Grits";
+            return Size.ToString() + " Mad Otar Grits";
         }
     }
 }

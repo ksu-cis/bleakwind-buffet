@@ -72,7 +72,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Overrides the ToString() method to return the "Briarheart Burger" string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string name of burger</returns>
         public override string ToString()
         {
             return "Briarheart Burger";

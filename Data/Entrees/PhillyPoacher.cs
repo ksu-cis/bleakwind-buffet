@@ -58,7 +58,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Overrides the ToString() method to return the "Philly Poacher" string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string name of entree</returns>
         public override string ToString()
         {
             return "Philly Poacher";
