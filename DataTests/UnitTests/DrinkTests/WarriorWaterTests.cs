@@ -42,7 +42,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             ww.Ice = true;
             Assert.True(ww.Ice);
             ww.Ice = false;
-            Assert.True(ww.Ice);
+            Assert.False(ww.Ice);
         }
 
         [Fact]
@@ -52,7 +52,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             ww.Lemon = true;
             Assert.True(ww.Lemon);
             ww.Lemon = false;
-            Assert.True(ww.Lemon);
+            Assert.False(ww.Lemon);
         }
 
         [Fact]
@@ -100,7 +100,7 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             ww.Ice = includeIce;
             ww.Lemon = includeLemon;
             if (!includeIce && includeLemon)
-                Assert.Contains("Hold ice" + "Add lemon", ww.SpecialInstructions);
+                Assert.Contains("Hold ice" + " Add lemon", ww.SpecialInstructions);
             else if (!includeIce && !includeLemon)
                 Assert.Contains("Hold ice", ww.SpecialInstructions);
             else if (includeIce && includeLemon)
