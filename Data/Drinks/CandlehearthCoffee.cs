@@ -15,10 +15,10 @@ namespace BleakwindBuffet.Data.Drinks
     /// <summary>
     /// Properties of coffee
     /// </summary>
-    public class CandlehearthCoffee
+    public class CandlehearthCoffee : Drink
     {
         private Size size;
-        /// <summary>
+        /*/// <summary>
         /// gets/sets size of drink
         /// </summary>
         public Size Size
@@ -31,12 +31,12 @@ namespace BleakwindBuffet.Data.Drinks
             {
                 size = value;
             }
-        }
+        }*/
 
         /// <summary>
         /// gets/sets price depending on size
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -50,7 +50,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// gets calories depending on size
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -79,7 +79,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// creates list of instructions for staff
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

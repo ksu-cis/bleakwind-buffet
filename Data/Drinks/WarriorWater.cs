@@ -15,23 +15,23 @@ namespace BleakwindBuffet.Data.Drinks
     /// <summary>
     /// Properties of Water
     /// </summary>
-    public class WarriorWater
+    public class WarriorWater : Drink
     {
         private Size size;
-        /// <summary>
+        /*/// <summary>
         /// gets/sets size of drink
         /// </summary>
         public Size Size
         {
             get { return size; }
             set { size = value; }
-        }
+        }*/
 
         /// <summary>
         /// gets/sets price depending on size
         /// </summary>
         /// <exception cref="System.NotImplementedException">Thrown for any unknown size</exception>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -46,7 +46,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// gets calories depending on size
         /// </summary>
         /// <exception cref="System.NotImplementedException">Thrown for any unknown calories</exception>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -70,7 +70,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// creates list of instructions for staff
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

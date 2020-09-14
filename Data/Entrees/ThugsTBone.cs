@@ -13,22 +13,22 @@ namespace BleakwindBuffet.Data.Entrees
     /// <summary>
     /// Attributes for the ThugsTBone
     /// </summary>
-    public class ThugsTBone
+    public class ThugsTBone : Entree
     {
         /// <summary>
         /// gets price
         /// </summary>
-        public double Price => 6.44;
+        public override double Price => 6.44;
 
         /// <summary>
         /// gets calories
         /// </summary>
-        public uint Calories => 982;
+        public override uint Calories => 982;
 
         /// <summary>
         /// returns empty list of instructions
         /// </summary>
-        public List<string> SpecialInstructions => new List<string>(); //Did I do this correctly?
+        public override List<string> SpecialInstructions => new List<string>(); //Did I do this correctly?
 
         /// <summary>
         /// Overrides the ToString() method to return the "Thugs T-Bone" string
