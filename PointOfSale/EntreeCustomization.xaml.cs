@@ -23,7 +23,7 @@ namespace PointOfSale
         }
 
         /// <summary>
-        /// 
+        /// Event for when done is clicked to go back to mainwindow
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

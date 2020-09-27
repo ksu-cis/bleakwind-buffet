@@ -20,13 +20,15 @@ namespace PointOfSale
     /// </summary>
     public partial class MainWindow : Window
     {
+        private StringBuilder sb = new StringBuilder();
+        
         public MainWindow()
         {
             InitializeComponent();
         }
 
         /// <summary>
-        /// 
+        /// Event for when any entree button is clicked
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -39,17 +41,23 @@ namespace PointOfSale
         }
         
         /// <summary>
-        /// 
+        /// Event for when any side button is clicked
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Side_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow main = new MainWindow();
+
             
+
+            sb.Append(uxVokunButton.Content.ToString());
+            uxRecipt.Text = sb.ToString();
+            sb.Append("\n");
         }
 
         /// <summary>
-        /// 
+        /// Event for when any drink button is clicked
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -60,5 +68,7 @@ namespace PointOfSale
             //MainWindow main = new MainWindow();
             //main.Close();
         }
+
+        
     }
 }

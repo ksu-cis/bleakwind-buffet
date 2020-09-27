@@ -12,13 +12,13 @@
         <Border BorderThickness="2" BorderBrush="Black" Margin="623,10,10,10">
             <Label Content="Order Items:" Margin="3,-2,3,375" FontSize="18"/>
         </Border>
-        <Button Content="Briarheart Burger" HorizontalAlignment="Left" Margin="22,23,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
-        <Button Content="Vokun Salad" HorizontalAlignment="Left" Margin="494,23,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
+        <Button Content="Briarheart Burger"  HorizontalAlignment="Left" Margin="22,23,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
+        <Button Name="uxVokunButton" Content="Vokun Salad" HorizontalAlignment="Left" Margin="494,23,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
         <Button Content="Sailor Soda" HorizontalAlignment="Left" Margin="263,23,0,0" VerticalAlignment="Top" Click="Drink_Click" Width="102" Height="80" Background="LightGreen"/>
         <Button Content="Tender" HorizontalAlignment="Left" Margin="682,342,0,0" VerticalAlignment="Top" Height="67" Width="93" Background="Yellow"/>
         <Button Content="Double Draugr" HorizontalAlignment="Left" Margin="22,108,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
         <Button Content="Thalmor Triple" HorizontalAlignment="Left" Margin="22,193,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
-        <Button Content="Smokehouse Skeleton" HorizontalAlignment="Left" Margin="22,278,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
+        <Button Content="Smokehouse Skeleton"  HorizontalAlignment="Left" Margin="22,278,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
         <Button Content="Garden Orc Omelette" HorizontalAlignment="Left" Margin="128,23,0,0" VerticalAlignment="Top" Width="102" Height="80" Click="Entree_Click" Background="LightBlue"/>
         <Button Content="Philly Poacher" HorizontalAlignment="Left" Margin="128,108,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
         <Button Content="Thugs T-Bone" HorizontalAlignment="Left" Margin="128,193,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
@@ -29,6 +29,7 @@
         <Button Content="Fried Miraak" HorizontalAlignment="Left" Margin="494,119,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
         <Button Content="Mad Otar Grits" HorizontalAlignment="Left" Margin="494,217,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
         <Button Content="Dragonborn Waffle Fries" HorizontalAlignment="Left" Margin="494,313,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
-        <TextBlock FontSize="18" FontWeight="Bold" FontStyle="Italic" Margin="636,49,25,97"> Hello, world! </TextBlock>
+        <TextBlock Name ="uxRecipt" TextWrapping="Wrap" FontSize="12" FontWeight="Bold" FontStyle="Italic" Margin="636,49,25,97"> Hello, world! </TextBlock>
+
     </Grid>
 </Window>
