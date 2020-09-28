@@ -36,6 +36,9 @@ namespace PointOfSale
         {
             EntreeCustomization window = new EntreeCustomization();
             window.Show();
+            
+            sb.Append("Entree\n");
+            uxRecipt.Text = sb.ToString();
             //MainWindow main = new MainWindow();
             //main.Close();
         }
@@ -48,12 +51,9 @@ namespace PointOfSale
         private void Side_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
-
-            
-
-            sb.Append(uxVokunButton.Content.ToString());
+            //sb.Append(uxVokunButton.Content.ToString());
+            sb.Append("Side\n");
             uxRecipt.Text = sb.ToString();
-            sb.Append("\n");
         }
 
         /// <summary>
@@ -65,6 +65,8 @@ namespace PointOfSale
         {
             DrinkCustomization window = new DrinkCustomization();
             window.Show();
+            sb.Append("Drink\n");
+            uxRecipt.Text = sb.ToString();
             //MainWindow main = new MainWindow();
             //main.Close();
         }

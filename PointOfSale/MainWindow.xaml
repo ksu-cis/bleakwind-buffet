@@ -29,7 +29,7 @@
         <Button Content="Fried Miraak" HorizontalAlignment="Left" Margin="494,119,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
         <Button Content="Mad Otar Grits" HorizontalAlignment="Left" Margin="494,217,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
         <Button Content="Dragonborn Waffle Fries" HorizontalAlignment="Left" Margin="494,313,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
-        <TextBlock Name ="uxRecipt" TextWrapping="Wrap" FontSize="12" FontWeight="Bold" FontStyle="Italic" Margin="636,49,25,97"> Hello, world! </TextBlock>
+        <TextBlock Name ="uxRecipt" TextWrapping="Wrap" FontSize="12" FontWeight="Bold" FontStyle="Italic" Margin="636,49,25,97"> </TextBlock>
 
     </Grid>
 </Window>
