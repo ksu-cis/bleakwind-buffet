@@ -9,6 +9,7 @@ using BleakwindBuffet.Data.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel; //POS 2 for xaml stuff
 
 namespace  BleakwindBuffet.Data.Drinks
 {
@@ -17,6 +18,8 @@ namespace  BleakwindBuffet.Data.Drinks
     /// </summary>
     public class AretinoAppleJuice : Drink
     {
+        public event PropertyChangedEventHandler PropertyChanged;//POS 2
+
         private Size size;
         /*/// <summary>
         /// gets/sets size of drink
@@ -41,9 +44,21 @@ namespace  BleakwindBuffet.Data.Drinks
         {
             get
             {
-                if (size == Size.Small) return 0.62;
-                if (size == Size.Medium) return 0.87;
-                if (size == Size.Large) return 1.01;
+                if (size == Size.Small)
+                {
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Small"));
+                    return 0.62;
+                }
+                if (size == Size.Medium)
+                {
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Medium"));
+                    return 0.87;
+                }
+                if (size == Size.Large)
+                {
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Large"));
+                    return 1.01;
+                }
                 throw new NotImplementedException();
             }
         }
@@ -77,6 +92,7 @@ namespace  BleakwindBuffet.Data.Drinks
             {
                 List<string> instructions = new List<string>();
                 if (Ice) instructions.Add("Add ice");
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Ice"));
                 return instructions;
             }
         }
@@ -88,5 +104,6 @@ namespace  BleakwindBuffet.Data.Drinks
         {
             return Size.ToString() + " Aretino Apple Juice";
         }
+
     }
 }

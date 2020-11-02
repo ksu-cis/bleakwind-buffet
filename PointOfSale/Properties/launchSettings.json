@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PointOfSale": {
+      "commandName": "Project"
+    },
+    "Website": {
+      "commandName": "Executable"
+    }
+  }
+}

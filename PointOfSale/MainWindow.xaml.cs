@@ -63,12 +63,11 @@ namespace PointOfSale
         /// <param name="e"></param>
         private void Drink_Click(object sender, RoutedEventArgs e)
         {
+
             DrinkCustomization window = new DrinkCustomization();
             window.Show();
             sb.Append("Drink\n");
             uxRecipt.Text = sb.ToString();
-            //MainWindow main = new MainWindow();
-            //main.Close();
         }
 
         

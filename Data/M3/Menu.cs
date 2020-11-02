@@ -3,6 +3,7 @@
  * Class: Menu.cs
  * Purpose: Be the menu
  */
+using BleakwindBuffet.Data.Drinks;
 using BleakwindBuffet.Data.Entrees;
 using BleakwindBuffet.Data.Enums;
 using BleakwindBuffet.Data.Sides;
@@ -89,7 +90,61 @@ namespace BleakwindBuffet.Data
 
         public static IEnumerable<IOrderItem> Drinks()
         {
-            throw new NotImplementedException();
+            List<IOrderItem> drinks = new List<IOrderItem>();
+            AretinoAppleJuice aj = new AretinoAppleJuice();
+            CandlehearthCoffee cf = new CandlehearthCoffee();
+            MarkarthMilk mm = new MarkarthMilk();
+            SailorSoda ss = new SailorSoda();
+            WarriorWater ww = new WarriorWater();
+
+            bool valid = true;
+            while (valid)
+            {
+                Size s = Size.Small;
+                if (s == Size.Small)
+                {
+                    aj.Size = s;
+                    cf.Size = s;
+                    mm.Size = s;
+                    ss.Size = s;
+                    ww.Size = s;
+                    drinks.Add((IOrderItem)aj);
+                    drinks.Add((IOrderItem)cf);
+                    drinks.Add((IOrderItem)mm);
+                    drinks.Add((IOrderItem)ss);
+                    drinks.Add((IOrderItem)ww);
+                }
+                s = Size.Medium;
+                if (s == Size.Medium)
+                {
+                    aj.Size = s;
+                    cf.Size = s;
+                    mm.Size = s;
+                    ss.Size = s;
+                    ww.Size = s;
+                    drinks.Add((IOrderItem)aj);
+                    drinks.Add((IOrderItem)cf);
+                    drinks.Add((IOrderItem)mm);
+                    drinks.Add((IOrderItem)ss);
+                    drinks.Add((IOrderItem)ww);
+                }
+                s = Size.Large;
+                if (s == Size.Large)
+                {
+                    aj.Size = s;
+                    cf.Size = s;
+                    mm.Size = s;
+                    ss.Size = s;
+                    ww.Size = s;
+                    drinks.Add((IOrderItem)aj);
+                    drinks.Add((IOrderItem)cf);
+                    drinks.Add((IOrderItem)mm);
+                    drinks.Add((IOrderItem)ss);
+                    drinks.Add((IOrderItem)ww);
+                }
+            }
+
+            return drinks;
         }
 
         public static IEnumerable<IOrderItem> FullMenu()

@@ -12,6 +12,7 @@
         <Border BorderThickness="2" BorderBrush="Black" Margin="623,10,10,10">
             <Label Content="Order Items:" Margin="3,-2,3,375" FontSize="18"/>
         </Border>
+        
         <Button Content="Briarheart Burger"  HorizontalAlignment="Left" Margin="22,23,0,0" VerticalAlignment="Top" Width="101" Height="80" Click="Entree_Click" Background="LightBlue"/>
         <Button Name="uxVokunButton" Content="Vokun Salad" HorizontalAlignment="Left" Margin="494,23,0,0" VerticalAlignment="Top" Click="Side_Click" Width="100" Height="80" Background="LightCoral"/>
         <Button Content="Sailor Soda" HorizontalAlignment="Left" Margin="263,23,0,0" VerticalAlignment="Top" Click="Drink_Click" Width="102" Height="80" Background="LightGreen"/>

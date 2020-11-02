@@ -26,7 +26,7 @@
         <CheckBox Name ="uxCheddar" Content="Cheddar" HorizontalAlignment="Left" Margin="352,167,0,0" VerticalAlignment="Top" Height="31" Width="134" FontSize="25" IsEnabled="False"/>
         <CheckBox Name ="uxSirloin" Content="Sirloin" HorizontalAlignment="Left" Margin="562,85,0,0" VerticalAlignment="Top" Height="31" Width="134" FontSize="25" IsEnabled="False"/>
         <CheckBox Name ="uxRoll" Content="Roll" HorizontalAlignment="Left" Margin="562,126,0,0" VerticalAlignment="Top" Height="32" Width="134" FontSize="25" IsEnabled="False"/>
-        <TextBox MaxLength="100" Margin="235,26,235,373" Background="DarkGray" Name="uxTextbox" Text="Customize:" FontSize="20"/>
+        <TextBox MaxLength="100" Margin="235,10,235,386" Background="DarkGray" Name="uxTextbox" Text="Customize:" FontSize="20"/>
 
     </Grid>
 </Window>
