@@ -22,7 +22,7 @@ namespace BleakwindBuffet.Data.Sides
         /// gets/sets size of salad
         /// </summary>
         public Size Size
-        {
+        {asdf
             get { return size; }
             set { size = value; }
         }*/
