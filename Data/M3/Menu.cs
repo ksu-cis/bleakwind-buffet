@@ -173,7 +173,13 @@ namespace BleakwindBuffet.Data
 
         public static IEnumerable<IOrderItem> FullMenu()
         {
-            throw new NotImplementedException();
+            List<IOrderItem> menu = new List<IOrderItem>();
+
+            menu.Add((IOrderItem)Drinks());
+            menu.Add((IOrderItem)Entrees());
+            menu.Add((IOrderItem)Sides());
+            return menu;
+
         }
     }
 }
