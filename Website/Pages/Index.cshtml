@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel 
+@{
+    ViewData["Title"] = "Home page"; @*random edit*@
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-3">Bleakwind Buffet</h1>
+    <p>
+        We at Bleakwind Buffet are proud to bring you authentic fantasy meals straight from the world of Skyrim.
+        Shake the blood off your sword and sake your thirst with one of our old-fashioned sailor sodas. Hack into a Smokehouse Skeleton with your dagger.
+        Or vanquish the the mighty Thalmor Triple Burger! You’ve had a hard adventure and earned your loot, so spend it with us!.
+    </p>
+    <h2 class="display-4">Entrees</h2>
+    <text>Any entree, side, and drink can be combined into a Combo with a $1 discount</text>
+    <div class="menu-item">
+        @if (BleakwindBuffet.Data.Menu.Entrees() != null)
+        {
+            foreach (BleakwindBuffet.Data.Entrees.Entree entree in BleakwindBuffet.Data.Menu.Entrees())
+            {
+                <div class="entree-items">
+                    @entree
+                    @entree.Calories
+                    @entree.Price
+                </div>
+            }
+        }
+    </div>
+    <h2 class="display-4">Sides</h2>
+    <text>Any entree, side, and drink can be combined into a Combo with a $1 discount</text>
+    <div class="menu-item">
+        @if (BleakwindBuffet.Data.Menu.Sides() != null)
+        {
+            foreach (BleakwindBuffet.Data.Sides.Side sides in BleakwindBuffet.Data.Menu.Sides())
+            {
+                <div class="drink-items">
+                    @sides
+                    @sides.Calories
+                    @sides.Price
+                </div>
+            }
+        }
+    </div>
+    <h2 class="display-4">Drinks</h2>
+    <text>Any entree, side, and drink can be combined into a Combo with a $1 discount</text>
+    <text style="color:crimson">
+        Sailor Soda Flavors: Blackberry, Cherry, Grapefruit, Lemon, Peach, Watermelon
+    </text>
+    <div class="menu-item">
+        @if (BleakwindBuffet.Data.Menu.Drinks() != null)
+        {
+            foreach (BleakwindBuffet.Data.Drinks.Drink drink in BleakwindBuffet.Data.Menu.Drinks())
+            {
+                <div class="test">
+                    @drink
+                    @drink.Calories
+                    @drink.Price
+                </div>
+            }
+        }
+    </div>
+</div>

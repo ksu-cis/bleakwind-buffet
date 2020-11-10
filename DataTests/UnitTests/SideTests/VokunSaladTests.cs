@@ -1,30 +1,61 @@
 ﻿/*
  * Author: Zachery Brunner
+ * Edited by: John Wills
  * Class: VokunSaladTests.cs
  * Purpose: Test the VokunSalad.cs class in the Data library
  */
 using Xunit;
 
 using BleakwindBuffet.Data;
+using BleakwindBuffet.Data.Sides;
 using BleakwindBuffet.Data.Enums;
+using System;
 
 namespace BleakwindBuffet.DataTests.UnitTests.SideTests
 {
     public class VokunSaladTests
     {
         [Fact]
+        public void ShouldImplementIOInterface()    //M3
+        {
+            VokunSalad vs = new VokunSalad();
+            Assert.IsAssignableFrom<IOrderItem>(vs);
+        }
+
+        [Fact]
+        public void ShouldBeASide()
+        {
+            VokunSalad vs = new VokunSalad();
+            Assert.IsAssignableFrom<Side>(vs);
+        }
+
+        [Fact]
         public void ShouldBeSmallByDefault()
         {
+            VokunSalad vs = new VokunSalad();
+            Assert.Equal(Size.Small, vs.Size);
         }
 
         [Fact]
         public void ShouldBeAbleToSetSize()
         {
+            VokunSalad vs = new VokunSalad();
+            vs.Size = Size.Small;
+            Assert.Equal(Size.Small, vs.Size);
+            vs.Size = Size.Medium;
+            Assert.Equal(Size.Medium, vs.Size);
+            vs.Size = Size.Large;
+            Assert.Equal(Size.Large, vs.Size);
         }
 
         [Fact]
-        public void ShouldReturnCorrectSpecialInstructions()
+        public void ShouldReturnCorrectSpecialInstructions() //AGH
         {
+            VokunSalad vs = new VokunSalad();
+            /*Assert.Throws<System.NotImplementedException>(() =>
+            {
+                VokunSalad vs = new VokunSalad();
+            });*/
         }
 
         [Theory]
@@ -33,6 +64,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
         [InlineData(Size.Large, 1.82)]
         public void ShouldReturnCorrectPriceBasedOnSize(Size size, double price)
         {
+            VokunSalad vs = new VokunSalad();
+            vs.Size = size;
+            Assert.Equal(price, vs.Price);
         }
 
         [Theory]
@@ -41,6 +75,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
         [InlineData(Size.Large, 73)]
         public void ShouldReturnCorrectCaloriesBasedOnSize(Size size, uint calories)
         {
+            VokunSalad vs = new VokunSalad();
+            vs.Size = size;
+            Assert.Equal(calories, vs.Calories);
         }
 
         [Theory]
@@ -49,6 +86,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
         [InlineData(Size.Large, "Large Vokun Salad")]
         public void ShouldReturnCorrectToStringBasedOnSize(Size size, string name)
         {
+            VokunSalad vs = new VokunSalad();
+            vs.Size = size;
+            Assert.Equal(name, vs.ToString());
         }
     }
 }
